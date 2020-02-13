@@ -1,0 +1,146 @@
+OOPS: Object oriented programing system/structure
+=======================================================
+There are following fundamental of oops:
+-class			: is wrapper of data member and function/method 
+			: example
+			class employee{
+
+			//data members / member variable
+			 int eid;
+			 String name; 
+
+			 //methods
+			 public void newemp(){}
+
+			 public void show(){}
+
+
+			}
+-object			: is an instance of class
+			example:
+			  employee e = new employee(); //here e is an object of class employee
+			
+
+-encapsulation		: is way to wrap the data member and method together or in a single unit/block i.e. called encapsulaiton 
+			: encapsulation is concept , every class is by default encapsulated 
+		
+
+-abstraction/data hiding  : to exposure the essential features of class and hide the definiation/implementation i.e. called abstraction 
+						
+
+-constructor		: is function (which has same name as name of the class) which invoke automatically when object will create 
+			: constructor cannot have return type
+			: constructor initialize the memory 
+			: constructor canot be called exeplicitly
+			: there are following types of constructor 
+			i. default constructor 
+			ii. parameterize constructor 
+			iii. copy constructor 
+				 
+-inheritence
+-polymorphisam
+
+
+and other cocepts are:
+	- abstract class
+	- interface
+
+access specifier 
+
+access modifier 
+
+Inheritence: to extend one class features to another class 
+=======================
+	-child class object can access to parent class method and data member 
+x`
+There are following types of inheritence:
+	i. single level
+			A -> B 
+
+	ii. multi level
+			A -> B -> C ...
+	iii. tree / hirarchical 
+			A -> B, C -> M,F	
+	iv. hybrid 
+			A -> B -> C
+			X -> y,z
+		
+	v. multiple : java doesn't support multiple inheritence 
+			- this can be achieved using interface
+
+		A , B, C ... -> M 
+
+Polymorphisam  : poly menas many and forms means forms
+=======================
+	- multiple function has same name but different works
+
+	- There are rollowing types of polymorphsiam 
+		i. overloading : multiple function will have same name but different argument (no of argument , type of argument )
+			
+		ii. overriding	: multiple function will have same name and argument i.e called overriding 
+
+					
+
+
+
+Abstract class : is a partial class which can contains abstract and non-abstract method
+--------------------------------
+- Abstract method cannot have body or definiation 
+- Non-abstract method should have body or definition 
+- Abstract class cannot be initialized (object cannot be created of abstract class)
+
+Example:
+		public abstract class Test{
+
+			public void add(int a , int b){
+
+			}
+
+			public abstract void sub(int a, int b);
+
+		}
+
+		public class Imps extends Test{
+			
+			@Override 
+			public void sub(int a, int b){
+
+			}
+
+		}
+Interface : is fully abstract class, all methods will be abstract by default 
+------------------------
+- All methods are abstract and public by default
+- We cannot implement the body method in interface
+- Object cannot be created of interface
+- Multiple interface can be implemeted in one class 
+
+
+
+
+access specifier 
+=======================================
+keywords	within_class		in_child_class		whitin_package		anywhere
+----------------------------------------------------------------------------------------------------
+private		yes			no			no			no
+protected	yes			yes			yes			no				
+default		yes			no			yes			no
+public		yes			yes			yes			yes
+
+
+
+
+access modifier 
+=========================================================
+
+final   : declare variable with readonly scope 
+	: once assign data , we cannot modify
+	: if we will keep final keyword with method then method cannot be override 
+	
+this	: this works like pointer which refere to current object ref.
+
+super	: is keyword which refere to parent class data member , and method
+		
+static  : is keyword
+	: static allocate single memory 
+	: static data member and function can be called without object or instance 
